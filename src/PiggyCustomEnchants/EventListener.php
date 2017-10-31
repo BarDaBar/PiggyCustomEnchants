@@ -264,6 +264,14 @@ class EventListener implements Listener
                 $effect->setVisible(false);
                 $entity->addEffect($effect);
             }
+            $enchantment = $this->plugin->getEnchantment($damager->getInventory()->getItemInHand(), CustomEnchants::TEST);
+            if($enchantment !== null) {
+                $effect = Effect::getEffect(Effect::STRENGTH);
+                $effect->setAmplifier(0);
+                $effect->setDuraction(100 + 20 * $enchantment->getLevel());
+                $effect->setVisible(false);
+                $entity->addEffect($effect);
+            }    
             $enchantment = $this->plugin->getEnchantment($damager->getInventory()->getItemInHand(), CustomEnchants::DEATHBRINGER);
             if ($enchantment !== null) {
                 $damage = 2 + ($enchantment->getLevel() / 10);
