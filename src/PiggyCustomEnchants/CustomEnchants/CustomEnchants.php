@@ -16,6 +16,7 @@ class CustomEnchants extends Enchantment
     const DEATHBRINGER = 102;
     const GOOEY = 103;
     const POISON = 104;
+    const TEST = 750;
     /*const BLOCK = 105;
     const ICEASPECT = 106;
     const SHOCKWAVE = 107;*/
