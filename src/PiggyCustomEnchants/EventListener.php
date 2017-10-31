@@ -827,6 +827,7 @@ class EventListener implements Listener
                                 $this->plugin->berserkercd[strtolower($entity->getName())] = time() + 300;
                                 $effect = Effect::getEffect(Effect::STRENGTH);
                                 $effect->setAmplifier(3 + $enchantment->getLevel());
+
                                 $effect->setDuration(200 * $enchantment->getLevel());
                                 $effect->setVisible(false);
                                 $entity->addEffect($effect);
@@ -859,6 +860,19 @@ class EventListener implements Listener
                             $effect->setVisible(false);
                             $entity->addEffect($effect);
                         }
+                        $enchantment = $this->plugin->getEnchantment($armor, CustomEnchants::ENLIGHTEN);
+                        if($enchantment !== null) {
+                            $effect = Effect::getEffect(Effect::REGENERAtION);
+                            $effect->setAmplifier($enchantment->getLevel());
+                            $effect->setDuration(60 * $enchantment->getLevel());
+                            $effect->setVisible(false);
+                            $effect->addEffect($effect);
+                            $effect1= Effect::getEffect(Effect::STRENGTH
+                            $effect1>setAmplifier($enchantment->getLevel());
+                            $effect1>setDuration(60 * $enchantment->getLevel());
+                            $effect1>setVisible(false);
+                            $entity1>addEffect($effect1;
+                        }   
                         $enchantment = $this->plugin->getEnchantment($armor, CustomEnchants::HARDENED);
                         if ($enchantment !== null) {
                             $effect = Effect::getEffect(Effect::WEAKNESS);
