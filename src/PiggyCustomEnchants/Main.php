@@ -61,6 +61,7 @@ class Main extends PluginBase
         CustomEnchants::BLIND => ["Blind", "Weapons", "Damage", "Common", 5],
         CustomEnchants::BOUNTYHUNTER => ["Bounty Hunter", "Bow", "Damage", "", 5],
         CustomEnchants::CACTUS => ["Cactus", "Armor", "Equip", "Rare", 1],
+
         CustomEnchants::CHARGE => ["Charge", "Weapons", "Damage", "Uncommon", 5],
         CustomEnchants::CRIPPLINGSTRIKE => ["Cripple", "Weapons", "Damage", "Common", 5],
         CustomEnchants::CRIPPLE => ["Cripple", "Weapons", "Damage", "Common", 5],
@@ -108,6 +109,7 @@ class Main extends PluginBase
         CustomEnchants::SPRINGS => ["Springs", "Boots", "Equip", "Uncommon", 5],
         CustomEnchants::STOMP => ["Stomp", "Boots", "Fall_Damage", "Uncommon", 5],
         CustomEnchants::TELEPATHY => ["Telepathy", "Tools", "Break", "Rare", 1],
+        CustomEnchants::TEST => ["Test", "Weapons", "Damage", "Uncommon", 5],
         CustomEnchants::VAMPIRE => ["Vampire", "Weapons", "Damage", "Uncommon", 1],
         CustomEnchants::VOLLEY => ["Volley", "Bow", "Shoot", "Uncommon", 5],
         CustomEnchants::WITHER => ["Wither", "Weapons", "Damage", "Uncommon", 5]
