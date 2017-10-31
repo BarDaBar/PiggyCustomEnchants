@@ -1078,4 +1078,4 @@ class EventListener implements Listener
         }
         return Item::COAL;
     }
-}
+}    
