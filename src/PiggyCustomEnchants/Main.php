@@ -22,7 +22,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
 /**
- * Class Main
+
+* Class Main
  * @package PiggyCustomEnchants
  */
 class Main extends PluginBase
@@ -73,6 +74,7 @@ class Main extends PluginBase
         CustomEnchants::ENDERSHIFT => ["Endershift", "Armor", "Damaged", "Rare", 5],
         CustomEnchants::ENERGIZING => ["Energizing", "Tools", "Break", "Uncommon", 5],
         CustomEnchants::ENLIGHTED => ["Enlighted", "Armor", "Damaged", "Uncommon", 5],
+        CustomEnchants::ENLIGHTEN => ["Enlighten", "Armor", "Damaged", "Mythic", 5],
         CustomEnchants::EXPLOSIVE => ["Explosive", "Tools", "Break", "Rare", 5],
         CustomEnchants::FROZEN => ["Frozen", "Armor", "Damaged", "Rare", 5],
         CustomEnchants::GEARS => ["Gears", "Boots", "Equip", "Uncommon", 5],
