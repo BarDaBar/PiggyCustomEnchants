@@ -1,3 +1,4 @@
+
 <?php
 
 namespace PiggyCustomEnchants\CustomEnchants;
@@ -18,6 +19,7 @@ class CustomEnchants extends Enchantment
     const POISON = 104;
     const TEST = 750;
     const ENLIGHTEN = 751;
+    const DIVINE = 752;
     /*const BLOCK = 105;
     const ICEASPECT = 106;
     const SHOCKWAVE = 107;*/
