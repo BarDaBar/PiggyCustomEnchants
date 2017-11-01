@@ -804,7 +804,7 @@ class EventListener implements Listener
                     $enchantment = $this->plugin->getEnchantment($armor, CustomEnchants::ENDERSHIFT);
                     if ($enchantment !== null) {
                         if ($entity->getHealth() - $event->getDamage() <= 4) {
-                            if (!isset($this->plugin->endershiftcd[strtolower($entity->getName())]) || time() > $this->plugin->endershiftcd[strtolower($entity->getName())]) {
+)                            if (!isset($this->plugin->endershiftcd[strtolower($entity->getName())]) || time() > $this->plugin->endershiftcd[strtolower($entity->getName())]) {
                                 $this->plugin->endershiftcd[strtolower($entity->getName())] = time() + 300;
                                 $effect = Effect::getEffect(Effect::SPEED);
                                 $effect->setAmplifier($enchantment->getLevel() + 3);
@@ -866,12 +866,17 @@ class EventListener implements Listener
                             $effect->setAmplifier($enchantment->getLevel());
                             $effect->setDuration(60 * $enchantment->getLevel());
                             $effect->setVisible(false);
-                            $effect->addEffect($effect);
-                            $effect1= Effect::getEffect(Effect::STRENGTH
-                            $effect1>setAmplifier($enchantment->getLevel());
-                            $effect1>setDuration(60 * $enchantment->getLevel());
-                            $effect1>setVisible(false);
-                            $entity1>addEffect($effect1;
+                            $entity->addEffect($effect);
+                            $effect1 = Effect::getEffect(Effect::STRENGTH);
+                            $effect1->setAmplifier($enchantment->getLevel());
+                            $effect1->setDuration(60 * $enchantment->getLevel());
+                            $effect1->setVisible(false);
+                            $entity->addEffect($effect1);
+                            $effect2 = Effect::getEffect(Effect::SPEED);
+                            $effect2->setAmplifier($enchantment->getLevel());
+                            $effect2->setDuration(60 * $enchantment->getLevel());
+                            $effect2->setVisible(false);
+                            $entity->addEffect($effect2);                             
                         }   
                         $enchantment = $this->plugin->getEnchantment($armor, CustomEnchants::HARDENED);
                         if ($enchantment !== null) {
