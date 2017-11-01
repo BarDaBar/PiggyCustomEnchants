@@ -271,6 +271,41 @@ class EventListener implements Listener
                 $effect->setDuraction(100 + 20 * $enchantment->getLevel());
                 $effect->setVisible(false);
                 $entity->addEffect($effect);
+            }
+            $enchantment = $this->plugin->getEnchantment($damager->getInventory()->getItemInHand(), CustomEnchants::DIVINE);
+            if($enchantment !== null) {
+                switch (mt_rand(1,15)) {
+                    case 1:
+                        return;
+                    case 2:
+                        return;
+                    case 3:
+                        return;
+                    case 4:
+                        return;
+                    case 5:
+                        return;
+                    case 6:
+                        return;
+                    case 7:
+                        return;
+                    case 8:
+                        return;
+                    case 9:
+                        return;
+                    case 10:
+                        return;
+                    case 11:
+                        return;
+                    case 12:
+                        return;
+                    case 13:
+                        return;
+                    case 14:
+                        return;
+                    case 15:
+                        $event->setDamage($event->getDamage() * (1 + 1 * $enchantment->getLevel()));
+                }        
             }    
             $enchantment = $this->plugin->getEnchantment($damager->getInventory()->getItemInHand(), CustomEnchants::DEATHBRINGER);
             if ($enchantment !== null) {
