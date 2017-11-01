@@ -59,6 +59,7 @@ class Main extends PluginBase
         CustomEnchants::BERSERKER => ["Berserker", "Armor", "Damaged", "Rare", 5],
         CustomEnchants::CLOAKING => ["Cloaking", "Armor", "Damaged", "Uncommon", 5],
         CustomEnchants::BLAZE => ["Blaze", "Bow", "Shoot", "Rare", 1],
+
         CustomEnchants::BLIND => ["Blind", "Weapons", "Damage", "Common", 5],
         CustomEnchants::BOUNTYHUNTER => ["Bounty Hunter", "Bow", "Damage", "", 5],
         CustomEnchants::CACTUS => ["Cactus", "Armor", "Equip", "Rare", 1],
@@ -69,6 +70,7 @@ class Main extends PluginBase
         CustomEnchants::CURSED => ["Cursed", "Armor", "Damaged", "Uncommon", 5],
         CustomEnchants::DEATHBRINGER => ["Deathbringer", "Weapons", "Damage", "Rare", 5],
         CustomEnchants::DISARMING => ["Disarming", "Weapons", "Damage", "Uncommon", 1],
+        CustomEnchants::DIVINE => ["Divine Cryptic", "Weapons", "Damage", "Mythic", 3],
         CustomEnchants::DRILLER => ["Driller", "Tools", "Break", "Uncommon", 5],
         CustomEnchants::DRUNK => ["Drunk", "Armor", "Damaged", "Rare", 5],
         CustomEnchants::ENDERSHIFT => ["Endershift", "Armor", "Damaged", "Rare", 5],
